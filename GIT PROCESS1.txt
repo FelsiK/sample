@@ -1,0 +1,28 @@
+https://www3.ntu.edu.sg/home/ehchua/programming/howto/Git_HowTo.html
+
+To create git repository:-
+
+mkdir project_name.git
+cd project_name.git/
+git --bare init
+chmod -R g+ws *
+chgrp -R root 
+
+
+
+Local Server (Your pc) 
+
+mkdir Yourdir
+cd Yourdir
+git init
+git remote add origin username@host:/path/to/project_name.git    (Eg:- git remote add senthil root@192.168.0.7:/opt/gittest/test.git)
+root@192.168.0.7:/mnt/gittest/felsi.git
+git remote -v - check the remote repo
+git fetch (or) git fetch senthil master 
+git status - check the file and folder are modified 
+git add .
+git commit -m "Initial Project Commit"
+git push origin master  - Push the code
+git pull origin master  - Pull the code (get the code from git repo)
+
+
